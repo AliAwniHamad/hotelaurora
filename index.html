@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta name="description" content="Hotell Aurora i Lofoten – en plats mellan hav och fjäll. Boka din vistelse idag.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotell Aurora - Startsida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">AURORA</a>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <nav id="meny">
+                <a href="index.html">Start</a>
+                <a href="boka.html">Boka</a>
+                <a href="kontakta.html">Kontakta</a>
+                <a href="sevardheter.html">Sevärdheter</a>
+                <a href="boka.html" class="boka-knapp">Boka nu</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Välkommen till Hotell Aurora</h1>
+        <p>En plats mellan hav och fjäll i vackra Lofoten.</p>
+        <a href="boka.html" class="knapp">Boka din vistelse</a>
+    </section>
+
+    <main>
+
+        <h2>Upptäck hotellet</h2>
+
+        <div class="kort-lista">
+            <div class="kort">
+                <img src="bilder/rum.webp" alt="Rum på Hotell Aurora">
+                <h3>Rum</h3>
+                <p>Lugna rum med utsikt över fjäll och hav.</p>
+                <a href="#">Läs mer</a>
+            </div>
+
+            <div class="kort">
+                <img src="bilder/restaurang.webp" alt="Restaurang på Hotell Aurora">
+                <h3>Restaurang</h3>
+                <p>Lokala råvaror och smaker från Lofoten.</p>
+                <a href="#">Läs mer</a>
+            </div>
+
+            <div class="kort">
+                <img src="bilder/spa.webp" alt="Spa på Hotell Aurora">
+                <h3>Spa</h3>
+                <p>Värme, stillhet och återhämtning efter äventyret.</p>
+                <a href="#">Läs mer</a>
+            </div>
+        </div>
+
+        <section class="om-oss">
+            <img src="bilder/om-oss.webp" alt="Hotell Aurora i Lofoten">
+            <div>
+                <h2>En plats mellan hav och fjäll</h2>
+                <p>Hotell Aurora är din lugna bas i hjärtat av Lofoten. Välkommen att upptäcka norrsken, midnattssol och storslagen natur.</p>
+                <a href="kontakta.html" class="knapp">Läs mer om oss</a>
+            </div>
+        </section>
+
+        <section class="karusell">
+            <h2>Bilder från hotellet</h2>
+            <div class="karusell-box">
+                <button onclick="bytBild(-1)">&#10094;</button>
+                <img id="karusell-bild" src="bilder/hero.webp" alt="Bild från hotellet">
+                <button onclick="bytBild(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="boka-box">
+            <h2>Boka din vistelse</h2>
+            <form action="https://httpbin.org/post" method="post">
+                <label for="ankomst">Ankomst:</label>
+                <input type="date" id="ankomst" name="ankomst" required>
+
+                <label for="avresa">Avresa:</label>
+                <input type="date" id="avresa" name="avresa" required>
+
+                <button type="submit" class="knapp">Sök lediga rum</button>
+            </form>
+        </section>
+
+    </main>
+
+   <footer>
+    <div class="footer-inner">
+        <div>
+            <p>Storgatan 1, Lofoten</p>
+            <p>0123-456 789</p>
+            <p>info@aurora.no</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

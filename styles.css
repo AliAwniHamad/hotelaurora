@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: darkslategray;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: darkslategray;
+    padding: 15px 20px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.boka-knapp {
+    background-color: white;
+    color: darkslategray;
+    padding: 6px 15px;
+    border-radius: 4px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.3rem;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url("bilder/hero.webp");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    color: white;
+}
+
+.knapp {
+    display: inline-block;
+    background-color: darkslategray;
+    color: white;
+    padding: 10px 22px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.kort-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.kort {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.kort img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.kort h2,
+.kort h3 {
+    margin: 15px 15px 5px 15px;
+}
+.kort h2 {
+    margin: 15px 15px 5px 15px;
+}
+
+.kort p {
+    margin: 0 15px 10px 15px;
+}
+
+.kort a {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.om-oss, .kontakt-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    margin: 40px 0;
+}
+
+.om-oss img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.karusell {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.karusell-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.karusell-box img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.karusell-box button {
+    background-color: darkslategray;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+fieldset {
+    border: 1px solid lightgray;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+legend {
+    font-weight: bold;
+    color: darkslategray;
+    padding: 0 10px;
+}
+
+.boka-form, .boka-box form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.boka-box {
+    background-color: white;
+    padding: 25px;
+    margin: 40px 0;
+}
+
+.karta {
+    height: 250px;
+    margin-top: 20px;
+}
+
+.karta iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    padding: 25px 20px;
+    margin-top: 40px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    nav.visa {
+        display: flex;
+    }
+
+    .om-oss, .kontakt-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+}
